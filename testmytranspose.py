@@ -34,7 +34,8 @@ class TestMyTranspose(unittest.TestCase):
         self.matrices = {
             "5x2": np.array([[1,2],[3,4],[5,6],[7,8],[9,10]]),
             "empty": np.empty((0,0)),
-            "1x2": np.array([[1,2]])
+            "1x2": np.array([[1,2]]),
+            "2x1": np.array([[1],[2]])
         }
         # (2) Vector
         self.vectors = {
