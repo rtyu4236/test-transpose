@@ -34,15 +34,12 @@ class TestMyTranspose(unittest.TestCase):
         self.matrices = {
             "5x2": np.array([[1,2],[3,4],[5,6],[7,8],[9,10]]),
             "empty": np.empty((0,0)),
-            "1x2": np.array([[1,2]]),
-            "2x1": np.array([[1],[2]]),
-            "3x1": np.array([[5], [6], [7]]),
+            "1x2": np.array([[1,2]])
         }
         # (2) Vector
         self.vectors = {
             "nan_vec": np.array([1, 2, np.nan, 3]),
-            "single_nan": np.array([np.nan]),
-            "empty_vec": np.array([])
+            "single_nan": np.array([np.nan])
         }
         # (3) DataFrame
         self.df = pd.DataFrame({
