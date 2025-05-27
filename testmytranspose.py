@@ -40,7 +40,8 @@ class TestMyTranspose(unittest.TestCase):
         # (2) Vector
         self.vectors = {
             "nan_vec": np.array([1, 2, np.nan, 3]),
-            "single_nan": np.array([np.nan])
+            "single_nan": np.array([np.nan]),
+            "empty_vec": np.array([]),
         }
         # (3) DataFrame
         self.df = pd.DataFrame({
